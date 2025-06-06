@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <link rel="stylesheet" href="/css/home.css" />
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simulador de Financiamento</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style/home.css" />
   </head>
   <body>
     <div class="container">
       <div class="left">
-        <div class="logo"><img src="/assets/logoTitle.png" alt="" /></div>
+        <div class="logo"><img src="../assets/logoTitle.png" alt="" /></div>
         <h1>Simule o seu <span class="green">financiamento.</span></h1>
         <p>
           Escolha as melhores condições para o financiamento do seu veículo.
         </p>
-        <img src="/assets/car.png" alt="Carro esportivo" class="car-img" />
+        <img src="../assets/car.png" alt="Carro esportivo" class="car-img" />
       </div>
 
       <div class="divider">
         <button class="arrow-button">
-          <img src="/assets/ellipseArrow.png" alt="" />
+          <img src="../assets/ellipseArrow.png" alt="" />
         </button>
       </div>
 
       <div class="right">
-        <h2><img src="/assets/emojis.png" alt="" /></h2>
-        <p class="subtitle">Preencha os campos e simule o seu financiamento.</p>
+        <h2><img src="../assets/emojis.png" alt="" /></h2>
+        <p class="subtitle">Preencha os campos e simule<br>o seu financiamento.</p>
 
         <form class="form">
           <label for="valor">Valor</label>
@@ -35,21 +34,31 @@
           <label for="banco">Selecione um banco</label>
           <select id="banco">
             <option selected disabled>Selecione um banco</option>
-            <option>Banco A</option>
-            <option>Banco B</option>
+            <option>Caixa</option>
+            <option>Santander</option>
+            <option>Bradesco</option>
+            <option>Itaú</option>
+            <option>Nubank</option>
+            <option>Inter</option>
           </select>
 
           <label for="parcelas">Em quantos meses?</label>
           <select id="parcelas">
             <option selected disabled>Em quantos meses?</option>
+            <option>6</option>
             <option>12</option>
+            <option>18</option>
             <option>24</option>
             <option>36</option>
+            <option>48</option>
+            <option>60</option>
+            <option>72</option>
           </select>
 
-          <button type="submit" class="btn">Simular financiamento</button>
+          <a href="../index/finance.html" class="btn">Simular financiamento</a>
         </form>
       </div>
     </div>
+   <script src="../script/home.js"></script>
   </body>
 </html>
