@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <link rel="stylesheet" href="/css/home.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Financiamento</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="logo">💲<span>Finance</span></div>
+        <h1>Simule o seu <span class="green">financiamento.</span></h1>
+        <p>
+          Escolha as melhores condições para o financiamento do seu veículo.
+        </p>
+        <img src="carro.png" alt="Carro esportivo" class="car-img" />
+      </div>
+
+      <div class="divider">
+        <button class="arrow-button">➤</button>
+      </div>
+
+      <div class="right">
+        <h2>💸💰</h2>
+        <p class="subtitle">Preencha os campos e simule o seu financiamento.</p>
+
+        <form class="form">
+          <label for="valor">Valor</label>
+          <input type="text" id="valor" placeholder="38.000,00" />
+
+          <label for="banco">Selecione um banco</label>
+          <select id="banco">
+            <option selected disabled>Selecione um banco</option>
+            <option>Banco A</option>
+            <option>Banco B</option>
+          </select>
+
+          <label for="parcelas">Em quantos meses?</label>
+          <select id="parcelas">
+            <option selected disabled>Em quantos meses?</option>
+            <option>12</option>
+            <option>24</option>
+            <option>36</option>
+          </select>
+
+          <button type="submit" class="btn">Simular financiamento</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
