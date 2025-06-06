@@ -16,6 +16,11 @@ body {
   width: 100%;
 }
 
+.right{
+  background-color: #f8f8f8;
+
+}
+
 .left,
 .right {
   flex: 1;
@@ -23,18 +28,19 @@ body {
 }
 
 .left {
-  background-color: #f8f8f8;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding-left: 250px;
+  flex: 0.3;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #00c48c;
-  margin-bottom: 30px;
+    margin-bottom: 60px;
+    width: 176.33px;
+    height: 40px;
 }
 
 .logo span {
@@ -42,7 +48,7 @@ body {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 64px;
   margin-bottom: 20px;
 }
 
@@ -71,13 +77,17 @@ h1 .green {
 }
 
 .arrow-button {
-  background-color: #e6f9f3;
+  background-color: transparent;
   border: none;
-  font-size: 24px;
-  color: #00c48c;
-  border-radius: 50%;
-  padding: 15px;
   cursor: pointer;
+  margin-top: -270px;
+  z-index: 10;
+  transform: translate(35%);
+}
+
+.arrow-button img {
+  width: 84px;
+  height: 84px;
 }
 
 .right {
@@ -87,10 +97,10 @@ h1 .green {
 }
 
 .subtitle {
-  margin-top: 10px;
-  font-size: 16px;
+  font-size: 24px;
   color: #777;
   margin-bottom: 20px;
+  
 }
 
 .form label {
@@ -102,7 +112,7 @@ h1 .green {
 
 input,
 select {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   border: 1px solid #00c48c;
   border-radius: 8px;
@@ -111,16 +121,18 @@ select {
 }
 
 .btn {
+  display: inline-block;
   background-color: #00c48c;
   color: white;
   border: none;
   padding: 12px;
-  width: 100%;
-  border-radius: 8px;
-  font-size: 16px;
-  margin-top: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  width: 50%;
+  border-radius: 10px;
+  font-size: 16px;  
+  text-align: center;
+  text-decoration: none;
+  margin-top: 15px;
+
 }
 
 .btn:hover {
