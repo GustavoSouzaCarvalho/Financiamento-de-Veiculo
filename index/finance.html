@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simulação de Financiamento</title>
-    <link rel="stylesheet" href="/css/finance.css" />
-  </head>
-  <body>
-    <main class="container">
-      <section class="left">
-        <div class="logo"><img src="/assets/logoTitle.png" alt="" /></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulação de Financiamento</title>
+  <link rel="stylesheet" href="/css/finance.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-        <div class="info">
-          <p>Valor das suas parcelas:</p>
-          <h1>R$ 1.302,23</h1>
+</head>
+<body>
+  <main class="container">
+    <section class="left">
+      <div class="logo"> <img src="/assets/logoTitle.png" alt=""> </div>
 
-          <p>Valor final a pagar:</p>
-          <h2>R$ 62.507,04</h2>
+      <div class="info">
+        
+      <p>Valor das suas parcelas:</p>
+      <h1 id="valorParcela">R$ 0,00</h1>
 
-          <p class="obs">*Financiamento em 48 meses.</p>
-        </div>
+      <p>Valor final a pagar:</p>
+      <h2 id="valorTotal">R$ 0,00</h2>
 
-        <button class="btn">Voltar ao simulador</button>
+    <p class="obs">
+      <span class="asterisco">*</span>
+      Financiamento em <span id="prazoMeses">0</span> meses.
+    </p>      
 
-        <footer>Todos os direitos reservados.</footer>
-      </section>
+  </div>
 
-      <section class="right">
-        <div class="icon">
-          <img src="/assets/ellipseLogo.png" alt="" />
-        </div>
-        <img src="/assets/banner.png" alt="" />
-      </section>
-    </main>
-  </body>
+      <a href="../index/home.html" id="btnVoltar" class="btn">Voltar ao simulador</a>
+
+      <footer>Todos os direitos reservados.</footer>
+    </section>
+
+    <div class="icon">
+    <img src="/assets/ellipseLogo.png" alt="">
+  </div>
+
+  <section class="left">
+  </section>
+
+  <section class="right">
+    <img src="/assets/banner.png" alt="">
+  </section>
+
+  </main>
+
+  <script src="../script/finance.js"></script>
+
+</body>
 </html>
