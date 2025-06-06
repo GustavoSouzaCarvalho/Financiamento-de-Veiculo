@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const prazoMeses = sessionStorage.getItem('prazoMeses');
 
     if (valorParcela && valorTotal && prazoMeses) {
-        valorParcelaElement.textContent = `R$ ${parseFloat(valorParcela).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-        valorTotalElement.textContent = `R$ ${parseFloat(valorTotal).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+       valorParcelaElement.innerHTML = `R$&nbsp;${parseFloat(valorParcela).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+    valorTotalElement.innerHTML = `R$&nbsp;${parseFloat(valorTotal).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
         prazoMesesElement.textContent = prazoMeses;
     } else {
         valorParcelaElement.textContent = 'R$ 0,00';

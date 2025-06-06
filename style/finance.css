@@ -120,6 +120,7 @@ body {
 #valor-total, #valor-parcela {
   font-size: 36px;
   font-weight: bold;
+  white-space: nowrap;
   color: #4E4E4E;
 }
 
