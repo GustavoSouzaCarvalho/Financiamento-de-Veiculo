@@ -82,6 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
         sessionStorage.setItem('valorTotal', valorTotal.toFixed(2));
         sessionStorage.setItem('prazoMeses', parcelas);
 
-        window.location.href = 'finance.html';
+        window.location.href = 'index/finance.html';
     });
 });
